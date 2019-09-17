@@ -1,7 +1,6 @@
 #!/usr/bin/env gosh
 
 (use util.match)
-(add-load-path ".")
 (use aaron.parser)
 (use aaron.ast-node)
 (use aaron.vm)
