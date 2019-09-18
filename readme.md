@@ -108,10 +108,28 @@ $ ./configure
 $ make install
 ```
 
+## スタンドアロン実行ファイルの生成とインストール
+
+上の手順では必要なライブラリとスクリプトを Gauche 管理下のディレクトリにインストールしますが、単独の実行可能ファイルの方が都合が良いかもしれません。
+その場合には以下の手順をとることで実行ファイルを生成・インストールできます。
+
+```console
+$ git clone https://github.com/SaitoAtsushi/Gauche-aaron.git
+$ cd Gauche-aaron
+$ ./configure
+$ make standalone-install
+```
+
 ## 実行方法
 
 コマンドから、プログラムのファイル名を与えるとそれを解釈・実行して結果を標準出力に表示します。
 
 ```console
 $ gosh aaron-asm [filename]
+```
+
+単独の実行ファイルをインストール出来ている場合には `aaron-asm` コマンドをそのまま実行できます。
+
+```
+$ aaron-asm [filename]
 ```
